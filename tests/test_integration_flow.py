@@ -1,5 +1,4 @@
 
-import pytest
 from mypackage.core import add
 
 
