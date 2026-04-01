@@ -24,14 +24,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install package
+        run: pip install -e .
+
       - name: Lint with flake8
-        run: |
-          flake8 .
+        run: flake8 .
 
       - name: Run unit tests
-        run: |
-          pytest -m unit
+        run: pytest -m unit
 
       - name: Run integration tests
-        run: |
-          pytest -m integration
+        run: pytest -m integration
