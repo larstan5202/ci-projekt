@@ -1,2 +1,2 @@
-pytets
+pytest
 flake8
